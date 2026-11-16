@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FindYourThings 🔍
 
-## Getting Started
+> **Lost something? Find it.**  
+> Central Lost and Found platform for **Dr. Ambedkar Institute of Technology (DR AIT)** students and faculty.
 
-First, run the development server:
+---
+
+## 🏛️ About the Project
+
+**FindYourThings** is an institutional lost-and-found management portal built for **Dr. Ambedkar Institute of Technology (DR AIT)**, Bengaluru. The platform streamlines reporting lost belongings, submitting found items, coordinating claims, and managing administrative approvals with zero personal contact data leakage to the public.
+
+---
+
+## ✨ Features
+
+- **Google OAuth Authentication:** Secure student and faculty login.
+- **Found Item Submissions:** Report items found across campus with photos, category, and date.
+- **Lost Item Reports:** File reports for misplaced belongings.
+- **Campus Admin Portal:** Multi-tier role verification (`admin`, `super_admin`) with decision workflows (Approve & Publish / Reject with reason).
+- **Zero-Leak Row-Level Security:** Confidential student contact info is strictly isolated from public views.
+- **Real-time Synchronization:** Live updates powered by Supabase Realtime subscriptions.
+- **Interactive Claim Flow:** Pre-fills claim requests to campus security coordination with validated details.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router, Turbopack)
+- **UI & Styling:** React 19, Tailwind CSS v4
+- **Database & Auth:** Supabase PostgreSQL with Row-Level Security (RLS)
+- **Object Storage:** Supabase Storage (MIME-validated, user-folder sandboxed)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/deekshith2r-ctrl/FindYourThings.git
+cd FindYourThings
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Setup
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url_here
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key_here
+```
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏫 Campus Location
 
-## Learn More
+**Dr. Ambedkar Institute of Technology (DR AIT)**  
+Outer Ring Road, Near Jnana Bharathi Campus, Mallathahalli, Bengaluru, Karnataka – 560056  
+*Campus Security: Central Campus Admin Block (Ground Floor)*
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private repository for Dr. Ambedkar Institute of Technology. All rights reserved.
